@@ -1,0 +1,50 @@
+BODY, H2, H3, H4, H5, H6, TH, TD {
+font-family: arial, helvetica, sans-serif;
+}
+H1 {
+    font-size: 38px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+line {
+    stroke: white;
+    stroke-dasharray: 12, 14;
+    stroke-width: 5;
+}
+
+.paddle, .ball {
+    fill: white;
+}
+
+.key {
+    font-size: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.controls {
+    margin: 50px;
+}
+
+.gameover {
+    font-family:sans-serif;
+    font-size:80px;
+    fill:red;
+}
+
+.winner {
+    font-family:sans-serif;
+    font-size:60px;
+    fill:red;
+}
+
+.points {
+    fill: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    margin-top: 100px;
+}
+

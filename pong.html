@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <svg id="canvas" width="600" height="600">
+            <text class="points" id="leftPlayerPoints", x="110", y="180">0</text>
+            <text class="points" id="rightPlayerPoints", x="430", y="180">0</text>
+            <rect class="paddle" id="leftPaddle" width="10" height="40" transform="translate(35, 280)"></rect>
+            <rect class="paddle" id ="rightPaddle" width="10" height="40" transform="translate(570, 280)"></rect>
+            <rect class="ball" id="ball" width="10" height="10" transform="translate(300, 300)"></rect>
+            <line x1="50%" y1="0" x2="50%" y2="600"></line>
+        </svg>
+        <div id="controls">
+            <h1>Controls:</h1>
+            <table id="table">
+                <tr>
+                    <td><h2 class="movement">Move Paddle Up</h2></td>
+                    <td><div id="ArrowUp" class="key">&#8679;</div></td>
+                </tr>
+                <tr>
+                    <td><h2 class="movement">Move Paddle Down</h2></td>
+                    <td><div id="ArrowDown" class="key">&#8681;</div></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
